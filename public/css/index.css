@@ -1,0 +1,1117 @@
+/*
+    Created By Emad Mirzaie 30-05-93
+    1 - Initials
+    2 - Slideshow Menu ads
+    3 - Today Deals
+    4 - Top Sell
+    5 - Horizontal Products List
+    6 - Industry Floor Box
+    7 -  Footer buy proccess
+    8 -  Footer
+    9 -  ScrollSpy
+    10 - Side Menu
+    11 - settings
+
+*/
+
+/* ------------------ 1 - Initial---------------- */
+.content{
+    background-color: #eee;
+    height:3000px;
+    overflow: hidden;
+}
+.discount-flag {
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    min-width: 28px;
+    height: 54px;
+    padding-right: 22px;
+    width:50px;
+    color: #fff;
+    font: 700 23px/44px Arial;
+    text-align: right;
+    background: url(../img/ws-buyer-discount.png) no-repeat 0 0;
+    z-index:100;
+}
+
+/* ------------------ 2 - Slideshow Menu ads---------------- */
+.main-slidshow{
+    padding:0px;
+}
+.ads{
+    padding:0px;
+}
+.ads img{
+    width:100%;
+    height:164px;
+}
+.today-deal{
+    margin-top:40px;
+}
+/* ------------------ 3 - Today Deals---------------- */
+.today-deal .container-inner {
+    background-color: #fff;
+    border-top: 2px solid #e52e04;
+}
+.today-deal .title {
+    position: relative;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+.container-main .row{
+    margin:0px;
+}
+.today-deal .container-main {
+    height: 480px;
+}
+.today-deal .title h2 {
+    float: right;
+    font-size: 20px;
+    line-height: 48px;
+    margin: 0 18px 0 0;
+    font-weight: 700;
+}
+.today-deal .title h2 a {
+    color: #333;
+    text-decoration:none;
+}
+.today-deal .title h2 a i {
+    color: #E62E04;
+    font-style:normal;
+}
+.today-deal .title .view-more {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    color: #999;
+    font-size: 13px;
+    text-decoration:none;
+}
+.today-deal .title .view-more:hover{
+    color: #E62E04;
+}
+.today-deal .main-product-box{
+
+}
+.today-deal .main-product-box:hover , .product-list-show li:hover {
+    box-shadow: 0 3px 6px 0 rgba(51,51,51,.298039);
+    border-color: #eee;
+}
+.today-deal .row-box {
+    float: right;
+}
+.today-deal .main-product-box {
+    border-right: 1px solid #eee;
+    border-left: 1px solid transparent;
+}
+.today-deal .main-product-show {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    height: 480px;
+}
+.today-deal .main-product-show a{
+    color:#333;
+    text-decoration:none;
+}
+.today-deal .main-product-show .pro-img {
+    margin-bottom: 25px;
+    width: 280px;
+    height: 280px;
+}
+.today-deal .main-product-show .pro-img img {
+    max-width: 280px;
+    max-height: 280px;
+}
+.today-deal .main-product-show .pro-title {
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.today-deal .main-product-show .discount {
+    padding: 0 0 10px;
+    text-align: center;
+}
+.today-deal .main-product-show .discount span {
+    display: inline-block;
+    background-color: #e52e04;
+    line-height: 30px;
+    padding: 0 10px;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.today-deal .main-product-show .g-price {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+.today-deal .main-product-show .g-del-price , .product-list-show .g-del-price  {
+    color: #999;
+}
+.today-deal .product-list-show li {
+    position: relative;
+    list-style: none;
+    height: 160px;
+    padding-top: 10px;
+    margin-left: 0;
+    border-right: 1px solid #eee;
+    border-left: 1px solid transparent;
+    border-top: 1px solid #eee;
+}
+.today-deal .product-list-show li:first-child {
+    border-top: 0 none;
+}
+.today-deal .product-list-show li a {
+    display: block;
+    height: 140px;
+    color: #333;
+}
+.today-deal .product-list-show .pro-img {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    width: 150px;
+}
+.today-deal .product-list-show .pro-info {
+    position: absolute;
+    left: 25%;
+    margin-left: -50px;
+    padding-top: 30px;
+}
+.today-deal .product-list-show .pro-img img {
+    vertical-align: top;
+    width: 140px;
+    height: 140px;
+}
+.today-deal .product-list-show .pro-info .discount {
+    padding: 0 0 10px;
+    text-align: center;
+}
+.today-deal .product-list-show .pro-info .discount span {
+    display: inline-block;
+    background-color: #e52e04;
+    line-height: 30px;
+    padding: 0 10px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.today-deal .product-list-show .g-price {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+}
+.today-deal .product-list-show .g-del-price  {
+    color: #999;
+    float:right;
+}
+/* ------------------ 4 - Top Sell---------------- */
+.top-sell{
+    margin-top:40px;
+}
+.top-sell .container-inner {
+    background-color: #fff;
+    border-top: 2px solid #e52e04;
+}
+.top-sell .container-main {
+    height: 260px;
+}
+.top-sell .container-main.top-shops {
+    height: 170px;
+}
+.top-sell .title {
+    position: relative;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+.top-sell .title h2 {
+    float: right;
+    font-size: 20px;
+    line-height: 48px;
+    margin: 0 18px 0 0;
+    font-weight: 700;
+}
+.top-sell .title h2 a {
+    color: #333;
+    text-decoration:none;
+}
+.top-sell .title h2 a i {
+    color: #E62E04;
+    font-style:normal;
+}
+.top-sell .title .view-more {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    color: #999;
+    font-size: 13px;
+    text-decoration:none;
+}
+.top-sell .title .view-more:hover{
+    color: #E62E04;
+}
+
+/* ------------------ 5 - Horizontal Products List---------------- */
+.horizontal-list-show{
+    height:260px;
+    border-right: 1px solid #eee;
+    border-left: 1px solid transparent;
+    margin-bottom:5px;
+}
+.sub-product .horizontal-list-show{
+    border-left:1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.top-shops .horizontal-list-show{
+    height:170px;
+}
+.horizontal-list-show:hover {
+    box-shadow: 0 3px 6px 0 rgba(51,51,51,.298039);
+    border-color: #eee;
+}
+.horizontal-list-show .pro-img {
+    padding:10px;
+    text-align:center;
+}
+.horizontal-list-show .pro-img img {
+    width: 140px;
+    height: 140px;
+    border-radius:2px;
+
+}
+.horizontal-list-show  .pro-title {
+    line-height: 14px;
+    height: 14px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    text-align:center;
+    font-size:13px;
+    color:#333;
+}
+.horizontal-list-show .g-price{
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-align:center;
+    margin-top:15px;
+    color:#333;
+}
+.horizontal-list-show .pro-like{
+    text-align:center;
+    height:25px;
+    line-height:25px;
+    padding:0 10px;
+    margin:0 auto;
+    max-width:80px;
+}
+.horizontal-list-show .pro-like .like-count{
+    color:#FFF;
+    background-color: #E62E04;
+    padding-right:5px;
+    padding-left:5px;
+    text-align:center;
+    padding-top:2px;
+}
+.horizontal-list-show .pro-like i{
+    margin-right:5px;
+}
+
+/*----------------- 6 - Industry Floor Box ----------------*/
+.industry-floor {
+    margin-top: 40px;
+    font-size: 13px;
+}
+.industry-floor .container-inner {
+    background-color: #fff;
+    border-top: 2px solid #f31349;
+}
+.indutry-info {
+    float: right;
+    height: 551px;
+    border-left: 1px solid #eee;
+}
+.indutry-info.brand {
+    height:442px;
+}
+.brand-info {
+    float: right;
+    height: 150px;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.indutry-info .industry-enter a {
+    display: block;
+    height: 100px;
+    padding-top: 22px;
+    border-bottom: 1px solid #eee;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 700;
+    color: #f31349;
+}
+.indutry-info .article-enter a {
+    display: block;
+    height: 70px;
+    padding-top: 22px;
+    border-bottom: 1px solid #eee;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 700;
+    color: #f31349;
+}
+.indutry-info .industry-enter a i {
+    position: absolute;
+    left: 20px;
+    top: 42px;
+    width: 10px;
+    height: 20px;
+    content: '';
+    background: url(../img/home-sprite.png) no-repeat -400px -100px;
+}
+.indutry-info .article-enter a i.article {
+    position: absolute;
+    left: 20px;
+    top: 32px;
+    width: 40px;
+    height: 40px;
+    content: '';
+    background: url(../img/home-sprite.png) no-repeat -200px -150px;
+}
+.indutry-info .keyword-list a {
+    display: block;
+    color: #4e4e4e;
+    margin-top: 25px;
+    text-align:center;
+}
+.indutry-info .news-list {
+    line-height:18px;
+    text-align:right;
+}
+.indutry-info .news-list .more-news {
+    padding:10px 5px;
+    text-align:center;
+    color:#C03;
+}
+.indutry-info .news-list a {
+    display: block;
+    padding:12px;
+    color: #4e4e4e;
+    text-align:right;
+    border-bottom: 1px solid #eee;
+}
+.indutry-info .news-list a img {
+    max-width: 50px;
+    margin-left: 8px;
+    margin-right: 8px;
+    float: right;
+    border-radius: 4px;
+}
+.indutry-info .news-list a .news-title{
+    margin-top:10px;
+    font-size:13px;
+}
+.indutry-info .news-list a .news-date{
+    margin:0px;
+    color:#666;
+    font-size:11px;
+}
+.recommend-box {
+    position: relative;
+    float: right;
+    overflow: hidden;
+}
+.recommend-box .pic {
+    text-align: center;
+    overflow: hidden;
+    height: 550px;
+    min-width: 400px;
+}
+.recommend-box .info {
+    filter: none;
+    background-color: rgba(243,18,74,.8);
+    position: relative;
+    margin-top: -49px;
+    line-height: 50px;
+    height: 50px;
+    font-size: 18px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+}
+.rec-industry-list {
+    float: right;
+}
+.top-industry-product {
+    width: 100%;
+    position: relative;
+    z-index: 6;
+}
+.top-industry-product a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eee;
+    border-top: 0 none;
+}
+.top-industry-product .pic {
+    height: 275px;
+    padding: 10px 0;
+    overflow: hidden;
+    text-align: center;
+}
+.top-industry-product .pic img {
+    width: 380px;
+    height: 255px;
+}
+.rec-bottom-products {
+    height: 274px;
+    margin-bottom:0px;
+}
+.rec-industry-list li {
+    position: relative;
+    width: 50%;
+    float: right;
+    margin: 0 0 -1px 0;
+    list-style: none;
+    text-align: center;
+    line-height: 18px;
+}
+.rec-industry-list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eee;
+    border-top: 0 none;
+}
+.rec-industry-list li .subject {
+    display: block;
+    color: #333;
+    padding: 15px 5px 4px;
+    height: 37px;
+    overflow: hidden;
+    font-weight: 700;
+}
+.rec-industry-list li .sub-heading {
+    display: block;
+    color: #aaa;
+    padding: 0 5px;
+    height: 18px;
+    overflow: hidden;
+}
+.rec-industry-list li .pic {
+    padding: 15px 0 10px;
+    height: 220px;
+}
+.rec-industry-right-list li:first-child .pic {
+    height: 221px;
+}
+.rec-industry-list li .pic img {
+    width: 180px;
+    height: 195px;
+}
+.rec-industry-right-list {
+    float: right;
+}
+.rec-industry-right-list li {
+    list-style: none;
+    text-align: center;
+    line-height: 18px;
+    margin: 0;
+}
+.rec-industry-right-list li:first-child {
+    margin-left: -1px;
+    padding-left: 1px;
+}
+.rec-industry-right-list li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid transparent;
+}
+.rec-industry-right-list .subject {
+    display: block;
+    color: #333;
+    padding: 15px 5px 2px;
+    height: 35px;
+    overflow: hidden;
+    font-weight: 700;
+}
+.rec-industry-right-list .sub-heading {
+    display: block;
+    padding: 0 5px;
+    color: #aaa;
+    height: 18px;
+    overflow: hidden;
+}
+.rec-industry-right-list ul{
+    margin-bottom:0px;
+}
+.rec-industry-right-list.brand{
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid transparent;
+}
+.rec-industry-right-list li .pic {
+    height: 221px;
+    padding: 15px 0 10px;
+}
+.rec-industry-right-list li:first-child .pic {
+    height: 221px;
+}
+.rec-industry-right-list .pic img {
+    width: 180px;
+    height: 195px;
+}
+.top-industry-product a:hover , .rec-industry-right-list li a:hover , .rec-industry-list li a:hover , .industry-enter:hover , .recommend-box:hover {
+    box-shadow: 0 3px 6px 0 rgba(51,51,51,.298039);
+    text-decoration: none;
+}
+
+/*--------- 7 -  Footer buy proccess ---------- */
+.site-server-box {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+.site-item {
+    float: left;
+    padding-top: 40px;
+    padding: 40px 0 10px;
+    min-height: 228px;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+.site-item:first-child {
+    border-left: 1px solid #eee;
+}
+.site-item .icon {
+    display: block;
+    margin: 0 auto 15px;
+    width: 52px;
+    height: 53px;
+    background: url(../img/home-sprite.png) no-repeat;
+}
+.site-item h3 {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    color: #333;
+}
+.site-item p {
+    margin-bottom: 0;
+    line-height: 22px;
+    color: #999;
+    padding: 0 15px;
+}
+.site-item .i-great {
+    background-position: -400px -350px;
+}
+.site-item .i-delivery {
+    background-position: -500px -350px;
+    width: 60px;
+}
+.site-item .i-payment {
+    background-position: -100px -350px;
+    width: 54px;
+}
+.site-item .i-confidence {
+    background-position: -200px -350px;
+    width: 50px;
+}
+.site-item .i-help {
+    background-position: 0 -350px;
+    width: 68px;
+}
+.site-item .i-shop {
+    background-position: -250px -350px;
+    width: 106px;
+}
+
+/*--------------------- 8 - Footer------------------------*/
+.user-helper-footer h3{
+    margin:0px;
+}
+.user-helper-footer {
+    background-color: #fff;
+    color: #999;
+    font-size: 13px;
+    padding: 20px 0 10px;
+    text-align:right;
+}
+.alert-subscribe-form h3 {
+    font-size: 16px;
+    font-weight: 200;
+    color: #333;
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align:right;
+}
+.alert-subscribe-form .alert-subscribe-input {
+    width: 240px;
+    padding: 5px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.alert-subscribe-form .alert-subscribe-submit {
+    height: 32px;
+    min-width: 100px;
+    margin: 0;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #fff;
+    border: 0;
+    background-color: #e62e04;
+    font-family: arial;
+}
+.alert-subscribe-form .tips {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+.app-box {
+    padding-top: 10px;
+    font-size: 0;
+    white-space: -1;
+    zoom: 1;
+}
+.social-networks, .app-gratis {
+    width: 50%;
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+}
+.social-networks h3, .app-gratis h3 {
+    margin: 0px;
+    margin-bottom: 5px;
+    line-height: 32px;
+    color: #333;
+}
+.social-networks a, .app-gratis a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    text-indent: -999em;
+    overflow: hidden;
+    margin-right: 3px;
+    vertical-align: top;
+    background: url(../img/home-sprite.png) no-repeat;
+}
+.social-networks a.fb {
+    background-position: -37px -200px;
+}
+.social-networks a.vk {
+    background-position: 0px -200px;
+}
+.social-networks a.ok {
+    background-position: -74px -200px;
+}
+.social-networks a.twitter {
+    background-position: -111px -200px;
+}
+.app-gratis a.android-icon {
+    background-position: -203px -200px;
+}
+.app-gratis a.iphone-icon {
+    background-position: -166px -200px;
+}
+.f-link-header {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.f-link-list {
+    margin-bottom: 10px;
+}
+.f-link-list li {
+    margin: 0;
+    list-style: none;
+    line-height: 24px;
+}
+.f-link-list li a {
+    color: #999;
+    font-size: 12px;
+}
+.foot {
+    margin:0px;
+    padding: 15px 0;
+    text-align: center;
+    font: 12px/16px arial;
+    color: #666;
+    background-color: #EDEDED;
+}
+.foot p {
+    margin-bottom: 0;
+}
+
+/* ------------------- 9 - ScrollSpy -------------------- */
+.side-scrollspy{
+    direction:rtl;
+    top:160px;
+    right:15px;
+    visibility:hidden;
+    background:#FFF;
+    width:40px;
+}
+.side-scrollspy li {
+    list-style: none;
+    margin-right: 0;
+    height: 40px;
+}
+.side-scrollspy li a {
+    position: relative;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border-radius:0px;
+    background:none;
+    border:0px;
+    margin:0px;
+    padding:0px;
+
+}
+.side-scrollspy li.active a {
+    border:0px;
+    margin:0px;
+    background:none;
+
+}
+.side-scrollspy li.active{
+    min-width:75px;
+
+}
+.side-scrollspy li.active.women , .side-scrollspy .women span {
+    background-color:#F00;
+    border:0px;
+}
+.side-scrollspy li.active.women , .side-scrollspy li.women a:hover , .side-scrollspy li.active.women a:hover {
+    background-color:#F00;
+    border:0px;
+}
+.side-scrollspy li.active.women i, .side-scrollspy li.women i:hover {
+    background-position: 8px -45px;
+}
+.side-scrollspy li i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(../img/home-sprite.png) no-repeat 9px 7px;
+
+}
+.side-scrollspy li span {
+    display:none;
+    color: #fff;
+    padding: 10px 10px 10px;
+    margin-right: 40px;
+    font-size: 13px;
+    white-space: nowrap;
+    vertical-align:middle;
+}
+
+/*--------------------- 10 - Side Menu --------------------*/
+#cascademenu{
+    position: absolute;
+    border:1px solid #EEE;
+    z-index: 1000;
+}
+#column-right #em-verticalmenu .navbar-nav > li:hover > .dropdown-menu {
+    left: auto;
+    right: 100%;
+}
+#column-right #em-verticalmenu .navbar-nav > li.parent:hover > a:after {
+    left: -5px;
+    right: 0;
+}
+#em-verticalmenu .box-heading {
+    font-size: 18px;
+    border: none;
+    text-transform: uppercase;
+    padding: 13px 15px;
+    font-weight: normal;
+    color: #ffffff;
+}
+#em-verticalmenu .box-heading .fa {
+    font-size: 16px;
+    padding-right: 10px;
+}
+#em-verticalmenu .box-content {
+    background: #ffffff;
+    padding: 0;
+    /* min-height: 320px; */
+    position: static;
+    direction:rtl;
+}
+#em-verticalmenu .box-content .navbar-default {
+    position: static;
+    margin: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    background: none;
+}
+#em-verticalmenu .box-content .navbar-default .navbar-header {
+    float: none;
+    width: 100%;
+}
+#em-verticalmenu .box-content .navbar-default .navbar-collapse {
+    padding: 0;
+    max-width: auto;
+    /* min-height: 320px; */
+}
+#em-verticalmenu .navbar-nav {
+    position: static;
+    float: none;
+    width: 100%;
+}
+#em-verticalmenu .navbar-nav > li {
+    width: 100%;
+    height: auto;
+    position: static;
+    border-bottom: 1px solid #ebeef2;
+}
+#em-verticalmenu .navbar-nav > li > a {
+    display: block;
+    color: #3e474b;
+    padding: 10px;
+    text-align: right;
+    font-size: 12px;
+}
+#em-verticalmenu .navbar-nav > li > a:before {
+    color: #AAB2BD;
+    content: "\f013";
+    display: inline-block;
+    font-family: "yekan" , "FontAwesome";
+    font-weight: normal;
+    padding: 0 5px;
+}
+#em-verticalmenu .navbar-nav > li > a .menu-desc {
+    display: none;
+}
+#em-verticalmenu .navbar-nav > li > a .caret {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    margin: -5px 0;
+    border-left: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #999999;
+}
+#em-verticalmenu .navbar-nav > li.last {
+    border: none;
+}
+#em-verticalmenu .navbar-nav > li.last a,
+#em-verticalmenu .navbar-nav > li:last-child a {
+    border: 0;
+}
+#em-verticalmenu .navbar-nav > li:hover a:before {
+    color: #3498db;
+}
+#em-verticalmenu .navbar-nav > li:hover > a {
+    color: #3498db;
+}
+#em-verticalmenu .navbar-nav > li:hover > a .menu-icon {
+    background-position: left bottom !important;
+}
+#em-verticalmenu .navbar-nav > li:hover > a .caret {
+    border-left-color: #3498db;
+}
+#em-verticalmenu .navbar-nav > li:hover > .dropdown-menu {
+    right: 100%;
+    top: 0px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#em-verticalmenu .navbar-nav > li .parent {
+    position: relative;
+}
+#em-verticalmenu .navbar-nav > li .parent > .dropdown-toggle:hover {
+    color: #3498db;
+}
+#em-verticalmenu .navbar-nav > li .parent > .dropdown-menu {
+    min-height: 100px;
+    height: 100px;
+    height: auto !important;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.13);
+}
+#em-verticalmenu .navbar-nav > li .parent:hover > .dropdown-menu {
+    left: 100%;
+    top: 0px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#em-verticalmenu .navbar-nav > li.parent:hover > a:after {
+    position: absolute;
+    content: "";
+    right: -5px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border: 5px solid #ffffff;
+    z-index: 9999;
+}
+#em-verticalmenu .pav-colorbox {
+    display: none !important;
+}
+#em-verticalmenu .dropdown-menu {
+    right: -9999px;
+    top: -9999px;
+    left: auto;
+    border: 0;
+    display: block;
+    min-height: 100%;
+    height: 100%;
+    height: auto !important;
+    min-width: 215px;
+    padding: 15px;
+    background: #ffffff;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    color: #75716c;
+}
+#em-verticalmenu .dropdown-menu ul li {
+    border: 0;
+    padding: 4px 0;
+    list-style: none;
+}
+#em-verticalmenu .dropdown-menu ul li a {
+    color: #75716c;
+    padding: 2px 0;
+    /*  background: url('../../../img/shop/interior/icon-menu.png') no-repeat scroll 0 7px rgba(0, 0, 0, 0); */
+    padding: 0 0 0 15px;
+}
+#em-verticalmenu .dropdown-menu span.menu-title {
+    border-bottom: 1px solid #e9e9e9;
+    padding: 0 5px 5px 5px;
+    font-family: "yekan" ;
+    font-size: 14px;
+    font-weight: normal;
+    color : #3498db;
+}
+#em-verticalmenu .dropdown-menu ul li a .caret {
+    position: absolute;
+    top: 17px;
+    right: 0;
+}
+#em-verticalmenu .dropdown-menu ul li a:hover {
+    background-color: transparent;
+    background-position: 0 -37px;
+    color: #3498db;
+}
+#em-verticalmenu .dropdown-menu ul li a:hover .fa {
+    color: #3498db;
+}
+#em-verticalmenu .dropdown-menu .pav-menu-video {
+    width: 100%;
+}
+#em-verticalmenu .dropdown-menu .pav-menu-video iframe {
+    margin-bottom: 10px;
+}
+#em-verticalmenu .dropdown-menu .dropdown-toggle:hover {
+    color: #000000;
+}
+#em-verticalmenu .dropdown-menu .action {
+    display: none;
+}
+#em-verticalmenu .widget-product-list {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #EBEEF2;
+}
+#em-verticalmenu .w-product {
+    padding: 5px;
+}
+#em-verticalmenu .w-product .image {
+    float: none;
+}
+#em-verticalmenu .product-block {
+    width: 33.3333%;
+    height: auto;
+    padding: 0;
+    background: none transparent;
+    border: 0;
+}
+#em-verticalmenu .product-block .name {
+    min-height: 32px;
+    height: 32px;
+    height: auto !important;
+    padding: 0;
+    margin: 0;
+}
+#em-verticalmenu .product-block .name a {
+    color: #75716c;
+    padding: 0;
+}
+#em-verticalmenu .product-block .name a:hover {
+    color: #3498db;
+}
+#em-verticalmenu .product-block .image a {
+    padding: 0;
+}
+#em-verticalmenu .product-block .product-meta {
+    min-height: inherit;
+    width: auto;
+}
+#em-verticalmenu .product-block .rating,
+#em-verticalmenu .product-block .norating {
+    margin: 15px 0;
+    border-top: 1px solid #f2f3f4;
+    border-bottom: 1px solid #f2f3f4;
+    padding: 3px 0 6px;
+}
+
+/* ------------------------ 11 - Settings----------------- */
+#carousel-example-generic_2 .carousel-control , #carousel-example-generic_6 .carousel-control , #carousel-example-generic_7 .carousel-control{
+    background:none;
+    width:0px;
+}
+#carousel-example-generic_2 .carousel-control.left , #carousel-example-generic_6 .carousel-control.left , #carousel-example-generic_7 .carousel-control.left{
+    left:-10px;
+}
+#carousel-example-generic_2 .carousel-control.right , #carousel-example-generic_6 .carousel-control.right , #carousel-example-generic_7 .carousel-control.right{
+    right:-10px;
+}
+#side-nav{
+    z-index:1000;
+}
+#header.navbar-fixed-top{
+    box-shadow: 0 1px 3px #e8e8e8;
+}
+.show-block{
+    visibility:visible;
+}

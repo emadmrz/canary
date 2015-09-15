@@ -1,0 +1,139 @@
+/*
+    Created By Emad Mirzaie 01-06-93
+
+    1 - Initial
+    2 - Header
+    3 - Page
+
+*/
+
+/*--------------------- 1 - Header ------------------------*/
+body{
+    font-family: yekan , tahoma , "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+input{
+    text-indent: 1px;
+}
+/*--------------------- 2 - Header ------------------------*/
+.header-login{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.header-login .header-logo {
+    float: right;
+    font: bold 10px verdana;
+    height: 53px;
+    width: 200px;
+    margin: 12px 15px 0 0;
+    margin-right:90px;
+}
+.header-login .header-logo a {
+    background: url(../img/buyerlogin-logo.png) no-repeat;
+    display: block;
+    height: 34px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 208px;
+    float: right;
+}
+.header-login .header-logo p {
+    color: #999;
+    font-weight: normal;
+    font-size: 12px;
+}
+/*------------------------- 3 - Page ---------------------------*/
+.login-page{
+    background: -130px 0px no-repeat #fbfbfb;
+    width: 100%;
+    background-image: url(../img/banner-3.png);
+    direction:rtl;
+    border-top:1px solid #e5e5e5;
+    border-bottom:2px solid #CCC;
+    min-height:500px;
+}
+.login-page.register-page{
+    /*background: -50px 50px no-repeat #fbfbfb;*/
+    /*background-image: url(../img/banner-3.png);*/
+}
+.login-page .sign-in{
+    position: relative;
+    float: left;
+    width: 310px;
+    padding: 20px 20px 30px 20px;;
+    border: 1px solid #c1cee0;
+    overflow: hidden;
+    margin: 50px 130px;
+    background-color: #fff;
+}
+.login-page .sign-in .fields{
+    position: relative;
+    min-height: 200px;
+}
+.login-page .sign-in .fields label{
+    font-size:13px;
+    color:#333;
+}
+.login-page .sign-in .fields input[type=email] , .login-page .sign-in .fields input[type=password] , .login-page .sign-in .fields input[type=text] {
+    direction:ltr;
+    border-radius:0px !important;
+    height:32px;
+    font-size:12px;
+    line-height:32px;
+    vertical-align:middle;
+}
+.login-page .sign-in .join-login{
+    color: #4D4D4D;
+    padding-top: 8px;
+    border-top: 1px dashed #ccc;
+}
+.login-page .sign-in .join-login a , a.forget-pass{
+    color: #08c;
+    font-size:12px;
+}
+a.forget-pass{
+    color: #08c;
+    font-size:12px;
+    line-height:23px;
+    margin-left:5px;
+}
+.login-page .login-banner{
+    margin-right:130px;
+}
+.login-page .login-banner h3{
+    color:#666;
+}
+.login-page .login-banner p{
+    margin-top:15px;
+    color:#666;
+    width:250px;
+    font-weight:normal;
+    line-height:26px;
+}
+.login-page .left-form {
+    width: 400px;
+    border: 4px solid #eaeaea;
+    background-color: #fff;
+    margin: 30px 80px;
+}
+.login-page .left-form h3.title {
+    margin: 0px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #ccc;
+    font-size: 20px;
+}
+.login-page .form-head {
+    padding: 20px 25px 15px;
+    border-bottom: 2px solid #eaeaea;
+    color: #333;
+}
+.login-page .form-detail {
+    padding: 20px 25px;
+    font-family: Arial;
+    font-size: 14px;
+    color: #333;
+}
+.login-page input.inline-half{
+    width: 48.6%;
+    display: inline;
+}

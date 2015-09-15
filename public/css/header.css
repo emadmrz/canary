@@ -1,0 +1,576 @@
+/*
+
+    Create By Emad Mirzaie 30-05-93
+
+    Table Of Content
+    1 - top page global navigation
+    2 - header
+    3 - middle navigation
+
+*/
+/*-------------------- 1 - top page global navigation----------------------*/
+.top-lighthouse {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #fafafa;
+    z-index: 22;
+    font-size: 14px;
+}
+.top-lighthouse .nav-global{
+    float:right;
+}
+.top-lighthouse .nav-global .ng-item {
+    position: relative;
+    float: left;
+    padding: 0 10px;
+    height: 34px;
+    line-height: 34px;
+    border-right: 1px solid #e8e8e8;
+    font-size:12px;
+}
+.top-lighthouse .nav-global .ng-item:last-child {
+    border-right: 0 none;
+}
+.top-lighthouse .nav-global .ng-item ul{
+    text-align:right;
+    border-radius:1px;
+}
+.top-lighthouse .nav-global .ng-item a{
+    color:#666;
+    text-decoration:none;
+}
+.top-lighthouse .nav-global .ng-item a:hover{
+    color:#F60;
+
+}
+
+/*--------------------2 - header----------------------*/
+.header.btm-border{
+    border-bottom:1px solid #e8e8e8;
+}
+.header .navbar-default{
+    border:0px;
+    background:#FFF;
+    border-bottom: 1px solid #e9e9e9;
+}
+.header .navbar{
+    margin-bottom:0px;
+}
+.header .logo{
+    margin:0px;
+}
+.header .logo a {
+    float: left;
+    width: 151px;
+    height: 44px;
+    text-indent: -999em;
+    overflow: hidden;
+    background-image:url(../img/ae-logo-new.png);
+    background-repeat:no-repeat;
+    margin:18px 0px 20px 0px;
+}
+.header .nav-search{
+    width:100%;
+    margin-top:14px;
+}
+.header .nav-search .form-group{
+    width:100%;
+}
+.header .nav-search .search-field:focus{
+    outline: none;
+}
+.header .nav-search .search-field{
+    width:60%;
+    height:44px;
+    border: 1px solid #cbcbcb;
+    border-right: 0 none;
+    border-radius: 3px 0 0 3px;
+    margin-right:0px;
+    float:left;
+    direction:rtl;
+    font-size:13px;
+    fony-weight:noraml;
+    border-right: 1px solid #cbcbcb;
+    padding:0 10px 0 10px;
+}
+.header .nav-search .search-option option{
+    direction: rtl;
+    text-align: right;
+    color: #666;
+    font-size: 12px;
+    line-height: 25px;
+}
+.header .nav-search .search-option:focus{
+    outline: none;
+}
+.header .nav-search .search-option{
+    position: relative;
+    height: 44px;
+    border:0px;
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+    float:left;
+    background:#FFF;
+    width:25%;
+    font-size:13px;
+    fony-weight:noraml;
+    color : #9d9d9d;
+}
+.header .nav-search .search-option select option{
+    width: 150px;
+}
+.header .nav-search .search-submit{
+    width: 60px;
+    height: 44px;
+    background: url(../img/header-sprite.png) no-repeat -200px -50px;
+    margin-right:0px;
+    float:left;
+    border:0px;
+}
+.header .nav-search .search-category-value{
+    float:left;
+    position: relative;
+    display: block;
+    background:#FFF;
+    height:44px;
+    line-height:44px;
+    width: 90px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+    padding-left:5px;
+    border-top: 1px solid #3A3E4A;
+    border-bottom: 1px solid #3A3E4A;
+    border-left: 1px solid #ccc;
+}
+.header .nav-cart , .header .nav-wishlist , .header .nav-message ,  .header .nav-commercial ,  .header .nav-location{
+    margin-top: 18px;
+}
+.header .nav-cart , .header .nav-wishlist , .header .nav-user-account ,  .header .header .nav-message , .header .nav-commercial ,   .header .header .nav-location{
+    position: relative;
+    float: right;
+}
+
+.header .nav-cart{
+    margin-right: 20px;
+}
+.header .nav-cart a{
+    position: relative;
+    display: block;
+    padding: 18px 40px 0 0px;
+    z-index: 3;
+}
+.header .nav-cart a .cart-img{
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    background: url(../img/header-sprite.png) no-repeat 0 -50px;
+}
+.header .nav-cart a .text{
+    width: 30px;
+    display: inline-block;
+    color: #333;
+    font-size: 12px;
+}
+
+.header .nav-cart a .text:hover{
+    color:#F60;
+}
+.header .nav-cart .cart-number {
+    position: absolute;
+    top: 2px;
+    right: 43px;
+    padding: 0 2px;
+    min-width: 25px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #e62e04;
+    color: #fff;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif
+}
+.header .nav-message {
+    height: 50px;
+    margin-right: 30px;
+}
+.header .nav-message .popover{
+    width:200px;
+}
+.header .nav-message .popover .popover-title{
+    direction: rtl;
+    text-align: right;
+    font-family: "yekan";
+    font-size:13px;
+}
+.header .nav-message .popover .popover-content{
+    direction: rtl;
+    text-align: right;
+    font-size:12px;
+    line-height: 20px;
+}
+.header .nav-message a {
+    padding-right: 30px;
+    padding-top:18px;
+    position: relative;
+    display: block;
+    line-height: 16px;
+}
+.header .nav-message a .text{
+    width: 38px;
+    display: inline-block;
+    color: #333;
+    line-height: 20px;
+    font-size: 12px;
+}
+.header .nav-message a .text:hover {
+    color:#F60;
+}
+.header .nav-message a .message-img{
+    position: absolute;
+    top: 3px;
+    right: 0;
+    overflow: hidden;
+    padding-right: 1px;
+}
+.header .nav-message a .message-img i{
+    font-size: 30px;
+    color:#e62e04;
+}
+.header .nav-message .message-number {
+    position: absolute;
+    top: 2px;
+    right: 43px;
+    padding: 0 2px;
+    min-width: 25px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #e62e04;
+    color: #fff;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif
+}
+.header .nav-commercial {
+    height: 50px;
+    margin-right: 30px;
+}
+.header .nav-commercial .popover{
+    width:200px;
+}
+.header .nav-commercial .popover .popover-title{
+    direction: rtl;
+    text-align: right;
+    font-family: "yekan";
+    font-size:13px;
+}
+.header .nav-commercial .popover .popover-content{
+    direction: rtl;
+    text-align: right;
+    font-size:12px;
+    line-height: 20px;
+}
+.header .nav-commercial a {
+    padding-right: 30px;
+    /* padding-top:18px; */
+    position: relative;
+    display: block;
+    line-height: 16px;
+}
+.header .nav-commercial a .text{
+    width: 30px;
+    display: inline-block;
+    color: #333;
+    line-height: 17px;
+    font-size: 12px;
+    margin-right: 8px;
+    text-align: center;
+}
+.header .nav-commercial a .text:hover {
+    color:#F60;
+}
+.header .nav-commercial a .commercial-img{
+    position: absolute;
+    top: 3px;
+    right: 0;
+    overflow: hidden;
+    padding-right: 1px;
+}
+.header .nav-commercial a .commercial-img i{
+    font-size: 30px;
+    color:#e62e04;
+}
+.header .nav-commercial .commercial-number {
+    position: absolute;
+    top: 2px;
+    right: 43px;
+    padding: 0 2px;
+    min-width: 25px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #e62e04;
+    color: #fff;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif
+}
+.header .nav-location {
+    height: 50px;
+    margin-right: 30px;
+}
+.header .nav-location .popover{
+    width:200px;
+}
+.header .nav-location .popover .popover-title{
+    direction: rtl;
+    text-align: right;
+    font-family: "yekan";
+    font-size:13px;
+}
+.header .nav-location .popover .popover-content{
+    direction: rtl;
+    text-align: right;
+    font-size:12px;
+    line-height: 20px;
+}
+.header .nav-location a {
+    padding-right: 30px;
+    /* padding-top:18px; */
+    position: relative;
+    display: block;
+    line-height: 16px;
+}
+.header .nav-location a .text{
+    width: 30px;
+    display: inline-block;
+    color: #333;
+    line-height: 17px;
+    font-size: 12px;
+    margin-right: 8px;
+    text-align: center;
+}
+.header .nav-location a .text:hover {
+    color:#F60;
+}
+.header .nav-location a .location-img{
+    position: absolute;
+    top: 3px;
+    right: 0;
+    overflow: hidden;
+    padding-right: 1px;
+}
+.header .nav-location a .location-img i{
+    font-size: 30px;
+    color:#e62e04;
+}
+.header .nav-location .location-number {
+    position: absolute;
+    top: 2px;
+    right: 43px;
+    padding: 0 2px;
+    min-width: 25px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #e62e04;
+    color: #fff;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.header .nav-wishlist {
+    height: 50px;
+    margin-right: 30px;
+}
+.header .nav-wishlist .popover{
+    width:200px;
+
+}
+.header .nav-wishlist .popover .popover-title{
+    direction: rtl;
+    text-align: right;
+    font-family: "yekan";
+    font-size:13px;
+}
+.header .nav-wishlist .popover .popover-content{
+    direction: rtl;
+    text-align: right;
+    font-size:12px;
+    line-height: 20px;
+}
+.header .nav-wishlist a {
+    padding-right: 35px;
+    position: relative;
+    display: block;
+    line-height: 16px;
+}
+.nav-wishlist a .text{
+    width: 30px;
+    display: inline-block;
+    color: #333;
+    line-height: 18px;
+    font-size: 12px;
+}
+.header .nav-wishlist a .text:hover {
+    color:#F60;
+}
+.header .nav-wishlist a .wishlist-img{
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    background: url(../img/header-sprite.png) no-repeat -50px -50px;
+}
+.header .nav-user-account {
+    height: 70px;
+    margin-right:20px;
+    position:relative;
+    z-index:1000;
+}
+.header .user-account-info {
+    height: 60px;
+    padding: 18px 47px 6px 10px;
+    border: 1px solid transparent;
+    font-size: 12px;
+}
+.header .user-account-info.dropdown:hover{
+    border: 1px solid #fff;
+    border-color: #CCC;
+    border-bottom:0 none;
+    background-color: #FFF;
+    box-shadow: -2px -3px 2px 0px #EEE;
+}
+.header .user-account-info.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top:-1px;
+    position: absolute;
+    padding-top: 15px;
+    width: 260px;
+    border: 1px solid #CCC;
+    background-color: #fff;
+    color: #656565;
+    z-index: -1;
+    box-shadow:0px  0px 2px  2px #EEE;
+    border-radius:0;
+    margin-left: -1px;
+    padding-bottom: 0px;
+}
+.header .dropdown-user-info{
+    direction: rtl;
+    padding:0 20px 10px 20px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.header .dropdown-parts{
+    border-bottom : 1px solid #e8e8e8;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.header .flyout-quick-entry {
+    background-color: #f4f4f4;
+    direction: rtl;
+    text-align: right;
+    margin-bottom: 0px !important;
+    list-style: none;
+}
+.header .flyout-quick-entry li:first-child a {
+    background-color: #e8e8e8;
+}
+.header .flyout-quick-entry li a {
+    display: block;
+    padding: 6px 20px 6px 6px;
+    line-height: 22px;
+    color: #333;
+}
+.header .flyout-quick-entry li a:hover {
+    background-color: #e8e8e8;
+    color: #f60;
+}
+
+.header .nav-user-account .user-account-img{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 22px;
+    right: 10px;
+    background: #fff url(../img/header-sprite.png) no-repeat -100px -50px;
+}
+.header .user-account-info .account-unsigned {
+    display: block;
+    color: #f60;
+    height: 18px;
+    line-height: 18px;
+}
+.header .user-account-info .account-unsigned  .user_account_name{
+    color:#333;
+}
+.header .user-account-info .account-unsigned a{
+    color:#333;
+}
+.header .user-account-info .account-unsigned a:first-child {
+    color: #f60;
+}
+.header .user-account-info .account-unsigned a:hover{
+    color: #f60;
+    text-decoration:underline;
+}
+.user-account-info .account-unsigned .ua-line {
+    margin: 0 5px;
+    color: #333;
+}
+.header .user-account-info .myaccount {
+    display: block;
+    text-align:right;
+}
+.header .user-account-info .myaccount a {
+    color: #f60;
+}
+/*--------------------- 3 - middle navigation------------*/
+.nav-mid{
+    border-bottom : 1px solid #e9e9e9
+}
+.middle-search-area{
+    margin-right:0px;
+}
+.menu-category-title{
+    text-align:right;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 36px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: 700;
+}
+.channel-entrance {
+    padding-right: 20px;
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 700;
+}
+.channel-entrance a {
+    float: right;
+    margin-left: 20px;
+    color: #333;
+}
+.channel-entrance a:hover {
+    text-decoration:none;
+    color:#F60;
+}
