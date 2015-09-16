@@ -10,6 +10,6 @@ use App\Http\Controllers\Controller;
 class ProfileController extends Controller
 {
     public function index(){
-        return "this profile";
+        return view('profile.index');
     }
 }

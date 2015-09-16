@@ -14,6 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+/**
+ * Created By Dara on 16/9/2015
+ * Register Email controller
+ */
+Route::get('auth/email',['middleware'=>'auth','uses'=>'Auth\EmailController@index']);
+Route::post('auth/email',['middleware'=>'auth','uses'=>'Auth\EmailController@resend']);
+Route::get('auth/email/{confirmation_code}','Auth\EmailController@check');
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
@@ -33,6 +40,17 @@ Route::post('password/email', 'Auth\PasswordController@postEmail');
 Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
 Route::post('password/reset', 'Auth\PasswordController@postReset');
 
-
-Route::get('/home', 'HomeController@index');
-Route::get('/profile', 'ProfileController@index');
+/**
+ * Created By Dara on 15/9/2015
+ * register home route
+ */
+Route::group(['prefix'=>'home','as'=>'home.'],function(){
+    Route::get('/',['middleware'=>['auth'],'as'=>'home','uses'=>'HomeController@index']);
+});
+/**
+ * Created By Dara on 16/9/2015
+ * register user profile
+ */
+Route::group(['prefix'=>'profile','as'=>'profile.','middleware'=>['auth','email']],function(){
+    Route::get('/',['as'=>'me','uses'=>'ProfileController@index']);
+});
