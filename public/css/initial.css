@@ -1,6 +1,3 @@
-*{
-    font-family:'Yekan',tahoma,arial;
-}
 body{
     position:relative;
 }
@@ -15,9 +12,6 @@ dt {
 }
 dd{
     word-break: normal;
-}
-li{
-    list-style: none;
 }
 a:hover , a:visited ,a:focus {
     text-decoration:none !important;
